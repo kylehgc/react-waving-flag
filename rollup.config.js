@@ -3,6 +3,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import typescript from 'rollup-plugin-typescript2';
 import image from '@rollup/plugin-image';
+import css from "rollup-plugin-import-css";
 
 // this override is needed because Module format cjs does not support top-level await
 // eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -30,6 +31,7 @@ export default {
     peerDepsExternal(),
     resolve(),
     image(),
+    css(),
     commonjs(),
     typescript({
       useTsconfigDeclarationDir: true,

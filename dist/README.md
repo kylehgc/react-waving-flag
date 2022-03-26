@@ -1,6 +1,28 @@
 # react-waving-flag
 
-### Description
+<br/>
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/garvae/react-waving-flag/master/public/github/pigeon-peace.svg" alt="react-waving-flag demo" width="100%" height="auto">
+</p>  
+
+<br/>
+
+Like all normal people, I am against the war in Ukraine. 
+I am very sorry that we all find ourselves in this situation and that innocent people are suffering. 
+Such actions cannot be justified. There are not enough words in all the languages of the world 
+to apologize for this cruelty and injustice. With all my heart I support the brave and incredible people of Ukraine. 
+<strong>The Ukrainian people are a symbol of heroism, and the Flag of Ukraine is a symbol of freedom.</strong> 
+<br/>
+Let this flag wave.
+
+> Contact me If you are from Ukraine and need frontend consultation.
+
+## [HERE](https://www.globalcitizen.org/en/content/ways-to-help-ukraine-conflict) you can find out some meaningful ways you can help Ukraine
+
+<br/>
+
+### Project description
 Simple animated waving flag from jpg/png picture
  
 ### Features
@@ -12,7 +34,7 @@ Simple animated waving flag from jpg/png picture
 ---
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/garvae/react-waving-flag/master/public/github/demo.gif" alt="react-waving-flag demo" width="100%" height="auto">
+    <img src="https://raw.githubusercontent.com/garvae/react-waving-flag/master/public/github/demo.gif" alt="pigeon peace symbol" width="100%" height="auto">
 </p>  
 
 ### Installation
@@ -74,22 +96,5 @@ const App = () => {
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://www.github.com/garvae/react-waving-flag/issues).
-You can also take a look at the [contributing guide](https://wwwhub.com/garvae/react-waving-flag/raw/master/CONTRIBUTING.md).
 
-## Show your support
-
-Give a  ⭐ and your ❤️ if this project helped you!
-
-<a href="https://www.patreon.com/garvae">
-  <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
-</a>
-
-<br/>
-<br/>
-
-❤️️ <https://ko-fi.com/garvae>
-
-<br/>
-
-❤️️ <https://pay.cloudtips.ru/p/859caa2a>
 

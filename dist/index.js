@@ -1,7 +1,6 @@
 'use strict';
 
 var React = require('react');
-require('WavingFlag.css');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
@@ -24,7 +23,7 @@ var img = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAQEBAQEBAQEBA
  * @prop {number} [width=300] - Flag width
  *
  * @param {TWavingFlagProps} props
- * @returns {React.FC} Returns animated waving flag.
+ * @returns {JSX.Element} Returns animated waving flag.
  *
  * @example
     ```
@@ -44,7 +43,7 @@ var img = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAQEBAQEBAQEBA
     };
     ```
  */
-const WavingFlag = props => {
+const WavingFlag = (props) => {
     const { className, animationSpeed = 1, curvature = 10, fromLeft, flagContainerClassName, height = 200, boxShadowColor = '#f8f8f8', isShadow = true, width = 300, flag = img, } = props;
     const flagWaveHeight = Math.floor(height * 0.1);
     const flagHeight = Math.floor(height - flagWaveHeight * 2);

@@ -2,7 +2,7 @@ import React from 'react';
 
 import ukraineFlag from './assets/img/flag-ukraine.jpg';
 
-import 'WavingFlag.css';
+import './WavingFlag.css';
 
 export type TWavingFlagProps = {
   animationSpeed?: number,
@@ -32,7 +32,7 @@ export type TWavingFlagProps = {
  * @prop {number} [width=300] - Flag width
  *
  * @param {TWavingFlagProps} props
- * @returns {React.FC} Returns animated waving flag.
+ * @returns {JSX.Element} Returns animated waving flag.
  *
  * @example
     ```
@@ -53,7 +53,7 @@ export type TWavingFlagProps = {
     ```
  */
 
-export const WavingFlag: React.FC<TWavingFlagProps> = props => {
+export const WavingFlag = (props: TWavingFlagProps): JSX.Element => {
 
   const {
     className,

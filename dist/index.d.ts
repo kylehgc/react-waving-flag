@@ -14,7 +14,7 @@ export = WavingFlag;
  * @prop {number} [width=300] - Flag width
  *
  * @param {TWavingFlagProps} props
- * @returns {React.FC} Returns animated waving flag.
+ * @returns {JSX.Element} Returns animated waving flag.
  *
  * @example
     ```
@@ -34,5 +34,4 @@ export = WavingFlag;
     };
     ```
  */
-declare function WavingFlag(props: TWavingFlagProps): React.FC;
-import React = require("react");
+declare function WavingFlag(props: TWavingFlagProps): JSX.Element;

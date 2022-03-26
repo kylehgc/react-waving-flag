@@ -1,0 +1,52 @@
+@keyframes waving-mask {
+    from {
+        transform: translateY(10%)
+    }
+
+    to {
+        transform: translateY(-10%)
+    }
+}
+
+.WavingFlag__path {
+    animation-name: waving-mask;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    position: relative;
+    display: inline-block;
+}
+
+
+.WavingFlag__foreignObject {
+    display: flex;
+}
+
+.WavingFlag__wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.WavingFlag__wrapper .left {
+justify-content: flex-start;
+}
+
+.WavingFlag__container {
+    display: flex;
+    width: max-content;
+    height: max-content;
+}
+
+.WavingFlag__flag {
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    position: relative;
+    height: 100%;
+    width: 1px;
+    display: inline-block;
+}
+
+
