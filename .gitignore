@@ -1,0 +1,26 @@
+# dependencies
+node_modules
+
+# testing
+/coverage
+test
+
+# misc
+.DS_Store
+.idea
+
+# cache
+*.cache
+.eslintcache
+
+# logs
+*.log
+yarn.error
+
+# temp
+temp
+
+# local
+test-environment
+/readme-tables.xlsx
+/~$readme-tables.xlsx

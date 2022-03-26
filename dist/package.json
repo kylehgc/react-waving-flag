@@ -1,0 +1,46 @@
+{
+  "version": "1.0.0",
+  "description": "Simple animated waving flag from jpg/png picture",
+  "keywords": [
+    "component",
+    "animated",
+    "waving",
+    "flag",
+    "react",
+    "react-component",
+    "reactjs",
+    "typescript",
+    "visualization"
+  ],
+  "homepage": "https://github.com/garvae/react-waving-flag",
+  "funding": {
+    "url": "https://ko-fi.com/garvae"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/garvae/react-waving-flag"
+  },
+  "bugs": {
+    "url": "https://github.com/garvae/react-waving-flag/issues"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "umd:main": "index.js",
+  "module": "react-pie-chart.esm.js",
+  "typings": "images.d.ts",
+  "files": [
+    "*.d.ts",
+    "dist"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "name": "@garvae/react-waving-flag",
+  "author": "Vova Garvae",
+  "publishConfig": {
+    "access": "public"
+  }
+}
