@@ -1,5 +1,5 @@
 {
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple animated waving flag from jpg/png picture",
   "keywords": [
     "component",
@@ -100,8 +100,10 @@
     "@types/react-dom": "^17.0.11",
     "@typescript-eslint/eslint-plugin": "^5.10.2",
     "@typescript-eslint/parser": "^5.10.2",
+    "autoprefixer": "^10.4.4",
     "cpx": "^1.5.0",
     "cross-env": "^7.0.3",
+    "cssnano": "^5.1.5",
     "eslint": "7.32.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^16.1.0",
@@ -130,6 +132,7 @@
     "jsdoc": "^3.6.10",
     "jsdoc-babel": "^0.5.0",
     "jsdoc-to-markdown": "^7.1.1",
+    "postcss": "^8.4.12",
     "prettier": "2.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -137,6 +140,7 @@
     "rollup-plugin-analyzer": "^4.0.0",
     "rollup-plugin-import-css": "^3.0.3",
     "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-typescript2": "^0.31.2",
     "ts-loader": "^9.2.6",
     "ts-node": "^10.4.0",

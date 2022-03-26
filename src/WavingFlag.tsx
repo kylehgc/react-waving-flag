@@ -1,8 +1,7 @@
 import React from 'react';
 
 import ukraineFlag from './assets/img/flag-ukraine.jpg';
-
-import './WavingFlag.css';
+import s from './WavingFlag.module.css';
 
 export type TWavingFlagProps = {
   animationSpeed?: number,
@@ -59,7 +58,7 @@ export const WavingFlag = (props: TWavingFlagProps): JSX.Element => {
     className,
     animationSpeed = 1,
     curvature = 10,
-    fromLeft,
+    fromLeft = true,
     flagContainerClassName,
     height = 200,
     boxShadowColor = '#f8f8f8',
@@ -87,8 +86,10 @@ export const WavingFlag = (props: TWavingFlagProps): JSX.Element => {
 
   return (
     <svg
-      className={`WavingFlag__svg ${className}`}
+      className={`${s.WavingFlag__svg} ${className}`}
+      height={height}
       viewBox={`0 0 ${width} ${height}`}
+      width={width}
       xmlns="http://www.w3.org/2000/svg"
     >
       <style>
@@ -110,7 +111,7 @@ export const WavingFlag = (props: TWavingFlagProps): JSX.Element => {
         <g style={{ transform: fromLeft ? `translateX(${Math.floor(flagWidth) + 1}px)` : `translateX(${Math.floor(maskWaveSize) - 1}px)` }}>
           <g>
             <path
-              className="WavingFlag__path"
+              className={s.WavingFlag__path}
               d={
                 `
                   M ${fromLeft ? '-' : ''}${maskWaveSize} ${height * 0.5}
@@ -141,24 +142,24 @@ export const WavingFlag = (props: TWavingFlagProps): JSX.Element => {
       </mask>
 
       <foreignObject
-        className="WavingFlag__foreignObject"
+        className={s.WavingFlag__foreignObject}
         height={height}
         mask={`url(#${maskName})`}
         width={width}
         x="0"
         y="0"
       >
-        <div className={`WavingFlag__wrapper ${fromLeft ? 'left' : ''}`}>
+        <div className={`${s.WavingFlag__wrapper} ${fromLeft ? 'left' : ''}`}>
 
           <div
-            className={`WavingFlag__container ${flagContainerClassName}`}
+            className={`${s.WavingFlag__container} ${flagContainerClassName}`}
             style={{ height: flagHeight + 'px' }}
           >
             {
               Array(flagWidth).fill(null)
                 .map((_, i) => (
                   <div
-                    className="WavingFlag__flag"
+                    className={s.WavingFlag__flag}
                     key={`WavingFlag-element-${i}`}
                     style={
                       {

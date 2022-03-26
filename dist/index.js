@@ -8,6 +8,37 @@ var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
 
 var img = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAQEBAQEBAQEBAQGBgUGBggHBwcHCAwJCQkJCQwTDA4MDA4MExEUEA8QFBEeFxUVFx4iHRsdIiolJSo0MjRERFwBBAQEBAQEBAQEBAYGBQYGCAcHBwcIDAkJCQkJDBMMDgwMDgwTERQQDxAUER4XFRUXHiIdGx0iKiUlKjQyNEREXP/CABEIAMgBLAMBIgACEQEDEQH/xAAWAAEBAQAAAAAAAAAAAAAAAAAABwj/2gAIAQEAAAAAnYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADTwAAAAACnAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/xAAWAQEBAQAAAAAAAAAAAAAAAAAACAf/2gAIAQIQAAAAoIAAAAAAAAAAAAAAAAAAGPAAASAAAAAAAAAAAAAAAAAAAD//xAAWAQEBAQAAAAAAAAAAAAAAAAAABwb/2gAIAQMQAAAAi4AAAAAAAAAAAAAAAAAANwAABbgAAAAAAAAAAAAAAAAAAf/EABwQAAAHAQEAAAAAAAAAAAAAAAEEBhdRk9EAgP/aAAgBAQABPwD3c0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGc0qSg5cGeo//xAAcEQAABwEBAAAAAAAAAAAAAAACBQYXUpPSAGD/2gAIAQIBAT8A9k+CKiY0B1z4IqJjQHXPgiomNAdc+CKiY0B1z4IqJjQHXPgiomNAdc+CKiY0B1z4IqJjQHXPgiomNAdc+CKiY0B1z4IqJjQHXPgiomNAdc+CKiY0B1z4IqJjQHXPgiomNAdc+CKiY0B1z4IqJjQHXPgiomNAdc+CKiY0B17P/8QAHBEAAAcBAQAAAAAAAAAAAAAAAQQFF1GT0QBg/9oACAEDAQE/APZN+vyVsHOb9fkrYOc36/JWwc5v1+Stg5zfr8lbBzm/X5K2DnN+vyVsHOb9fkrYOc36/JWwc5v1+Stg5zfr8lbBzm/X5K2DnN+vyVsHOb9fkrYOc36/JWwc5v1+Stg5zfr8lbBzm/X5K2DnN+vyVsHPZ//Z";
 
+function styleInject(css, ref) {
+  if ( ref === void 0 ) ref = {};
+  var insertAt = ref.insertAt;
+
+  if (!css || typeof document === 'undefined') { return; }
+
+  var head = document.head || document.getElementsByTagName('head')[0];
+  var style = document.createElement('style');
+  style.type = 'text/css';
+
+  if (insertAt === 'top') {
+    if (head.firstChild) {
+      head.insertBefore(style, head.firstChild);
+    } else {
+      head.appendChild(style);
+    }
+  } else {
+    head.appendChild(style);
+  }
+
+  if (style.styleSheet) {
+    style.styleSheet.cssText = css;
+  } else {
+    style.appendChild(document.createTextNode(css));
+  }
+}
+
+var css_248z = "@-webkit-keyframes WavingFlag-module_waving-mask__9eazW{0%{transform:translateY(10%)}to{transform:translateY(-10%)}}@keyframes WavingFlag-module_waving-mask__9eazW{0%{transform:translateY(10%)}to{transform:translateY(-10%)}}.WavingFlag-module_WavingFlag__path__-41-D{-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-name:WavingFlag-module_waving-mask__9eazW;animation-name:WavingFlag-module_waving-mask__9eazW;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;display:inline-block;position:relative}.WavingFlag-module_WavingFlag__foreignObject__kA5WY{display:flex}.WavingFlag-module_WavingFlag__wrapper__jOiJX{align-items:center;display:flex;height:100%;justify-content:flex-end;width:100%}.WavingFlag-module_WavingFlag__wrapper__jOiJX .WavingFlag-module_left__TWLqh{justify-content:flex-start}.WavingFlag-module_WavingFlag__container__cSiAs{display:flex;height:-webkit-max-content;height:-moz-max-content;height:max-content;width:-webkit-max-content;width:-moz-max-content;width:max-content}.WavingFlag-module_WavingFlag__flag__RvVoW{animation-direction:alternate-reverse;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;display:inline-block;height:100%;position:relative;width:1px}";
+var s = {"WavingFlag__path":"WavingFlag-module_WavingFlag__path__-41-D","waving-mask":"WavingFlag-module_waving-mask__9eazW","WavingFlag__foreignObject":"WavingFlag-module_WavingFlag__foreignObject__kA5WY","WavingFlag__wrapper":"WavingFlag-module_WavingFlag__wrapper__jOiJX","left":"WavingFlag-module_left__TWLqh","WavingFlag__container":"WavingFlag-module_WavingFlag__container__cSiAs","WavingFlag__flag":"WavingFlag-module_WavingFlag__flag__RvVoW"};
+styleInject(css_248z);
+
 /**
  * @component
  *
@@ -44,7 +75,7 @@ var img = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAQEBAQEBAQEBA
     ```
  */
 const WavingFlag = (props) => {
-    const { className, animationSpeed = 1, curvature = 10, fromLeft, flagContainerClassName, height = 200, boxShadowColor = '#f8f8f8', isShadow = true, width = 300, flag = img, } = props;
+    const { className, animationSpeed = 1, curvature = 10, fromLeft = true, flagContainerClassName, height = 200, boxShadowColor = '#f8f8f8', isShadow = true, width = 300, flag = img, } = props;
     const flagWaveHeight = Math.floor(height * 0.1);
     const flagHeight = Math.floor(height - flagWaveHeight * 2);
     const flagWidth = Math.floor(width * 0.9);
@@ -57,13 +88,13 @@ const WavingFlag = (props) => {
   `;
     const maskName = 'wave-mask';
     const maskWaveSize = width * 0.1;
-    return (React__default["default"].createElement("svg", { className: `WavingFlag__svg ${className}`, viewBox: `0 0 ${width} ${height}`, xmlns: "http://www.w3.org/2000/svg" },
+    return (React__default["default"].createElement("svg", { className: `${s.WavingFlag__svg} ${className}`, height: height, viewBox: `0 0 ${width} ${height}`, width: width, xmlns: "http://www.w3.org/2000/svg" },
         React__default["default"].createElement("style", null, cssAnimationFlagWave),
         React__default["default"].createElement("mask", { id: maskName },
             React__default["default"].createElement("rect", { fill: "white", height: height, width: width, x: "0", y: "0" }),
             React__default["default"].createElement("g", { style: { transform: fromLeft ? `translateX(${Math.floor(flagWidth) + 1}px)` : `translateX(${Math.floor(maskWaveSize) - 1}px)` } },
                 React__default["default"].createElement("g", null,
-                    React__default["default"].createElement("path", { className: "WavingFlag__path", d: `
+                    React__default["default"].createElement("path", { className: s.WavingFlag__path, d: `
                   M ${fromLeft ? '-' : ''}${maskWaveSize} ${height * 0.5}
                   
                   C ${fromLeft ? '-' : ''}${maskWaveSize} ${height * 0.225}
@@ -81,10 +112,10 @@ const WavingFlag = (props) => {
                             animationDirection: fromLeft ? 'alternate' : 'alternate-reverse',
                             animationDuration: `${animationSpeed}s`,
                         } })))),
-        React__default["default"].createElement("foreignObject", { className: "WavingFlag__foreignObject", height: height, mask: `url(#${maskName})`, width: width, x: "0", y: "0" },
-            React__default["default"].createElement("div", { className: `WavingFlag__wrapper ${fromLeft ? 'left' : ''}` },
-                React__default["default"].createElement("div", { className: `WavingFlag__container ${flagContainerClassName}`, style: { height: flagHeight + 'px' } }, Array(flagWidth).fill(null)
-                    .map((_, i) => (React__default["default"].createElement("div", { className: "WavingFlag__flag", key: `WavingFlag-element-${i}`, style: {
+        React__default["default"].createElement("foreignObject", { className: s.WavingFlag__foreignObject, height: height, mask: `url(#${maskName})`, width: width, x: "0", y: "0" },
+            React__default["default"].createElement("div", { className: `${s.WavingFlag__wrapper} ${fromLeft ? 'left' : ''}` },
+                React__default["default"].createElement("div", { className: `${s.WavingFlag__container} ${flagContainerClassName}`, style: { height: flagHeight + 'px' } }, Array(flagWidth).fill(null)
+                    .map((_, i) => (React__default["default"].createElement("div", { className: s.WavingFlag__flag, key: `WavingFlag-element-${i}`, style: {
                         animationDelay: -i * curvature + 'ms',
                         animationDuration: `${animationSpeed}s`,
                         animationName: cssAnimationFlagWaveName,
