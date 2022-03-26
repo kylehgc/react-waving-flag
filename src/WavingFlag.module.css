@@ -29,7 +29,7 @@
     height: 100%;
 }
 
-.WavingFlag__wrapper .left {
+.WavingFlag__wrapper.left {
 justify-content: flex-start;
 }
 

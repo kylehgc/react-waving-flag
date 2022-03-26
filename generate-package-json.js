@@ -8,6 +8,7 @@ try {
 
   delete parsed["lint-staged"]
   delete parsed.scripts
+  delete parsed.files
   delete parsed["husky"]
   delete parsed.prettier
   delete parsed.devDependencies
@@ -17,9 +18,9 @@ try {
   const newJson = {
     ...parsed,
     "main": "index.js",
+    "typings": "index.d.ts",
     "umd:main": "index.js",
-    "module": "react-pie-chart.esm.js",
-    "typings": "images.d.ts",
+    "module": "react-waving-flag.esm.js",
   }
 
   const newJsonData = JSON.stringify(newJson, null, 2);

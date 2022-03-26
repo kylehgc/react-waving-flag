@@ -1,5 +1,5 @@
 {
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Simple animated waving flag from jpg/png picture",
   "keywords": [
     "component",
@@ -26,12 +26,8 @@
   "license": "MIT",
   "main": "index.js",
   "umd:main": "index.js",
-  "module": "react-pie-chart.esm.js",
-  "typings": "images.d.ts",
-  "files": [
-    "*.d.ts",
-    "dist"
-  ],
+  "module": "react-waving-flag.esm.js",
+  "typings": "index.d.ts",
   "engines": {
     "node": ">=10"
   },

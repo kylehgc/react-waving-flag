@@ -149,7 +149,7 @@ export const WavingFlag = (props: TWavingFlagProps): JSX.Element => {
         x="0"
         y="0"
       >
-        <div className={`${s.WavingFlag__wrapper} ${fromLeft ? 'left' : ''}`}>
+        <div className={`${s.WavingFlag__wrapper} ${fromLeft ? s.left : ''}`}>
 
           <div
             className={`${s.WavingFlag__container} ${flagContainerClassName}`}
