@@ -15,13 +15,6 @@ Simple animated waving flag from jpg/png picture
     <img src="https://raw.githubusercontent.com/garvae/react-waving-flag/master/public/github/demo.gif" alt="react-waving-flag demo" width="100%" height="auto">
 </p>  
 
-
-### Notes
-
-> You can choose if you want to resize the chart based on the parent size or if you want to set the size manually.
-> If you want `resizable` chart, you must be sure the parent container does not have zero width and height.
-> If you want to set the size manually just add the `size` property
-
 ### Installation
 
 ```sh
