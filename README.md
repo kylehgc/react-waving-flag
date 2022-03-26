@@ -9,9 +9,10 @@
 <br/>
 
 Like all normal people, I am against the war in Ukraine. 
-I am very sorry that we all find ourselves in this situation and that innocent people are suffering. 
-Such actions cannot be justified. There are not enough words in all the languages of the world 
+Absolutely insane actions from which innocent people suffer. Such actions cannot be justified and cannot be corrected. 
+There are not enough words in all the languages of the world 
 to apologize for this cruelty and injustice. With all my heart I support the brave and incredible people of Ukraine. 
+<br/>
 <strong>The Ukrainian people are a symbol of heroism, and the Flag of Ukraine is a symbol of freedom.</strong> 
 <br/>
 Let this flag wave.
