@@ -24,13 +24,15 @@ Let this flag wave.
 <br/>
 
 ### Project description
-Simple animated waving flag from jpg/png picture
+A simple animated waving flag from a jpg/png image
  
 ### Features
  - lightweight
- - can be shown from both left and write sides of the screen
+ - can be shown from both left and right sides of the screen
  - animated with CSS
  - ready for TypeScript
+
+> The UI of the component assumes its use from the edge of the container (screen)
 
 ---
 
