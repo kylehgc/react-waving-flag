@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ukraineFlag from './assets/img/flag-ukraine.jpg';
+import flagReact from './assets/img/flag_react.jpg';
 import s from './WavingFlag.module.css';
 
 export type TWavingFlagProps = {
@@ -42,7 +42,7 @@ export type TWavingFlagProps = {
       return (
         <div>
           <WavingFlag
-            flag="https://external-preview.redd.it/QVS6D1FlDcpx7byaow-LyO4GpezIlepIkozbzwqtFOY.png?auto=webp&s=d60d5e9953842259ade3c425c55354f6651029f4"
+            flag="https://s3.ap-southeast-1.amazonaws.com/arrowhitech.com/wp-content/uploads/2021/09/01031030/ReactJS.png"
             height={200}
             width={300}
           />
@@ -64,7 +64,7 @@ export const WavingFlag = (props: TWavingFlagProps): JSX.Element => {
     boxShadowColor = '#f8f8f8',
     isShadow = true,
     width = 300,
-    flag = ukraineFlag,
+    flag = flagReact,
   } = props;
 
   const flagWaveHeight = Math.floor(height * 0.1);
@@ -82,7 +82,7 @@ export const WavingFlag = (props: TWavingFlagProps): JSX.Element => {
 
   const maskName = 'wave-mask';
 
-  const maskWaveSize = width * 0.1;
+  // const maskWaveSize = width * 0.1;
 
   return (
     <svg
@@ -95,6 +95,10 @@ export const WavingFlag = (props: TWavingFlagProps): JSX.Element => {
       <style>
         {cssAnimationFlagWave}
       </style>
+
+      {/*
+
+      TODO: fix curve
 
       <mask
         id={maskName}
@@ -115,17 +119,17 @@ export const WavingFlag = (props: TWavingFlagProps): JSX.Element => {
               d={
                 `
                   M ${fromLeft ? '-' : ''}${maskWaveSize} ${height * 0.5}
-                  
+
                   C ${fromLeft ? '-' : ''}${maskWaveSize} ${height * 0.225}
                     ${fromLeft ? '-' : ''}${width * 0.015} ${height * 0.03}
                     0 0
-                  
+
                   V ${height}
-                  
-                  C ${fromLeft ? '-' : ''}${width * 0.012} ${height * 0.95} 
-                    ${fromLeft ? '-' : ''}${maskWaveSize} ${height * 0.75}  
-                    ${fromLeft ? '-' : ''}${maskWaveSize} ${height * 0.5} 
-                  
+
+                  C ${fromLeft ? '-' : ''}${width * 0.012} ${height * 0.95}
+                    ${fromLeft ? '-' : ''}${maskWaveSize} ${height * 0.75}
+                    ${fromLeft ? '-' : ''}${maskWaveSize} ${height * 0.5}
+
                   Z
                 `
               }
@@ -140,6 +144,8 @@ export const WavingFlag = (props: TWavingFlagProps): JSX.Element => {
           </g>
         </g>
       </mask>
+
+      */}
 
       <foreignObject
         className={s.WavingFlag__foreignObject}
