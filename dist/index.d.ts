@@ -25,7 +25,7 @@ export = WavingFlag;
       return (
         <div>
           <WavingFlag
-            flag="https://external-preview.redd.it/QVS6D1FlDcpx7byaow-LyO4GpezIlepIkozbzwqtFOY.png?auto=webp&s=d60d5e9953842259ade3c425c55354f6651029f4"
+            flag="https://s3.ap-southeast-1.amazonaws.com/arrowhitech.com/wp-content/uploads/2021/09/01031030/ReactJS.png"
             height={200}
             width={300}
           />
