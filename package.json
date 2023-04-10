@@ -26,7 +26,7 @@
   "license": "MIT",
   "main": "dist/index.js",
   "umd:main": "dist/index.js",
-  "module": "dist/react-waving-flag.esm.js",
+  "module": "dist/index.js",
   "typings": "dist/types/index.d.ts",
   "files": [
     "*.d.ts",
